@@ -259,3 +259,43 @@ button.cancelButton{
 .publish{
     float: left;
 }
+
+.uploadSuccess {
+    @include mobile{
+        position: relative;
+        top: 2rem;
+        left: 1rem;
+    }
+
+    @include tablet{
+        position: relative;
+        top: 2rem;
+        left: 1rem;
+    }
+
+    @include desktop{
+        position: relative;
+        top: 2rem;
+        left: 17rem;
+    }
+}
+
+.home{
+    @include mobile{
+        position: relative;
+        top: 3rem;
+        left: 1rem;
+    }
+
+    @include tablet{
+        position: relative;
+        top: 3rem;
+        left: 1rem;
+    }
+
+    @include desktop{
+        position: relative;
+        top: 3rem;
+        left: 17rem;
+    }
+}
