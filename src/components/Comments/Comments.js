@@ -2,6 +2,7 @@ import likes from '../../assets/icons/likes.svg';
 import views from '../../assets/icons/views.svg';
 import commentLogo from '../../assets/icons/add_comment.svg';
 import avatarLogo from '../../assets/images/Mohan-muruge.jpg';
+import './Comments.scss';
 
 function Comments({video}){
     // Get the count of number of comments

@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import './SelectedVideo.scss';
 import Comments from "../Comments/Comments";
 const API_URL = "http://localhost:5001";
 
