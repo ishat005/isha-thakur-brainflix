@@ -278,6 +278,7 @@ p.videoViews img{
 }
 
 .commentBlock{
+    
     @include mobile{
         margin-left: 5rem;
         width: 112%;
