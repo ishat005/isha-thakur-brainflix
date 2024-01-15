@@ -1,0 +1,31 @@
+$BrainFlix-Blue: #0095FF;
+$white: #FFFFFF;
+$mercury: #E1E1E1;
+$silver: #AFAFAF;
+$alabaster: #FAFAFA;
+$BrainFlix-Black: #323232;
+$BrainFlix-DarkBlack: #000000;
+$BrainFlix-DarkBlue: #0065AD;
+$red: #D22D2D;
+$desktop-width: 1280px;
+$tablet-min-width: 768px;
+$tablet-max-width: 1279px;
+$mobile-width: 767px;
+
+@mixin mobile {
+    @media only screen and (max-width:$mobile-width) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $tablet-min-width) and (max-width:$tablet-max-width) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop-width) {
+        @content;
+    }
+}

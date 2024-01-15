@@ -1,0 +1,171 @@
+@import '../../styles/partials/variables';
+@import '../../styles/partials/fonts';
+
+body {
+    font-family: 'Avenir';
+    font-weight: 400;
+}
+
+.brainflixLogo {
+    padding-top: 1rem;
+    
+    @include mobile {
+        display: block;
+        position: relative;
+        left: 83%;
+    }
+
+    @include tablet {
+        margin-left: 1rem;
+        position:relative;
+        top:0.5rem;
+        left:0.5rem;
+    }
+
+    @include desktop{
+        padding-top: 1rem;
+        position: relative;
+        left: 19rem;
+    }
+}
+
+#search {
+    background-image: url('../../assets/icons/search.svg');
+    background-position: 0.625rem;
+    background-repeat: no-repeat;
+    border: 1px solid $mercury;
+    background-size: 1.25rem;
+    background-color: $alabaster;
+    border: none;
+    border-radius: 4px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+
+    @include mobile {
+        height: 2.5rem;
+        padding: 0.75rem;
+        text-indent: 1.7rem;
+        width: 135%;
+    }
+
+    @include tablet {
+        height: 2.5rem;
+        padding: 0.75rem;
+        text-indent: 1.7rem;
+        width: 32%;
+        position: relative;
+        left: 22.5rem;
+    }
+
+    @include desktop{
+        position: relative;
+        left: 79.5rem;
+        height: 3.3em;
+        padding: 0.75rem;
+        text-indent: 1.7rem;
+        width: 20%;
+        bottom: 1rem;
+    }
+}
+
+::placeholder {
+    color: $BrainFlix-Black;
+}
+
+#search:focus{
+    background-image: none;
+}
+
+.uploadButton, .commentButton{
+    background-color: $BrainFlix-Blue;
+    color: $white;
+    border-radius: 4px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: none;
+    margin-top: 1rem;
+
+    @include mobile {
+        width: 188%;
+        height: 2.5rem;
+        padding: 0.75rem;
+    }
+}
+
+.uploadButton{
+    @include tablet{
+        padding: 1rem;
+        position: relative;
+        left: 22rem;
+        width: 30%;
+    }
+
+    @include desktop{
+        position: relative;
+        left: 80rem;
+        width: 18%;
+        bottom: 1rem;
+        padding: 1rem;
+    }
+}
+
+.commentButton{
+    @include mobile{
+        position: relative;
+        bottom: 3rem;
+        width: 159%;
+        left: 4rem;
+    }
+    @include tablet{
+        margin-left: 35rem;
+        position: relative;
+        bottom: 7.7rem;
+        width: 30%;
+        padding: 0.9rem;
+    }
+
+    @include desktop{
+        margin-left: 44rem;
+        position: relative;
+        bottom: 7.7rem;
+        width: 21%;
+        padding: 1.1rem;
+    }
+}
+
+.upload, .comment {
+    float: left;
+}
+
+.avatar {
+    @include mobile {
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: 50%;
+        position: absolute;
+        top: 2.22rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        left: 28rem;
+    }
+
+    @include tablet {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        position: absolute;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        left: 57rem;
+        top: 0.2rem;
+    }
+
+    @include desktop{
+        position: absolute;
+        left: 117rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+    }
+}
