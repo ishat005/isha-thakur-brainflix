@@ -74,7 +74,7 @@ function VideoUpload(){
                     </div>
 
                     <div>
-                     { 
+                      { 
                         uploadSuccess ? (
                             <>
                                 <div className="uploadSuccess"> Upload successful</div>
@@ -104,7 +104,6 @@ function VideoUpload(){
             </main>  
         </div>  
     )
-    
 }
 
 export default VideoUpload;
